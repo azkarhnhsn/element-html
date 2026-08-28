@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen Tabel</title>
+</head>
+<body>
+    <h1>Elemen Tabel</h1>
+    <h2>Elemen HTML dalam Membuat Tabel</h2>
+    <p>Tabel pada dasarnya digunakan untuk mengelompokkan suatu data secara terstruktur yang terdiri dari baris, kolom dan sel</p>
+    <p>Dalam membuat tabel dalam HTML ada beberapa tag yang harus diketahui seperti :</p>
+    <ul>
+        <li><strong>&lt;table&gt;</strong> : Tag ini digunakan untuk membuat tabel</li>
+        <li><strong>&lt;tr&gt;</strong> : Tag ini digunakan untuk membuat baris pada tabel</li>
+        <li><strong>&lt;td&gt;</strong> : Tag ini digunakan untuk membuat sel/kolom data pada tabel</li>
+    </ul>
+    <p>Seiring dengan perkembangan dan kebutuhan akan tabel, HTML juga menyediakan elemen-elemen opsional lain dalam pembuatan tabel seperti :</p>
+    <ul>
+        <li><strong>&lt;th&gt;</strong> : Tag ini digunakan untuk membuat sel/kolom header pada tabel</li>
+        <li><strong>&lt;thead&gt;</strong> : Tag ini digunakan untuk mengelompokkan baris header pada tabel</li>
+        <li><strong>&lt;tbody&gt;</strong> : Tag ini digunakan untuk mengelompokkan baris isi pada tabel</li>
+        <li><strong>&lt;tfoot&gt;</strong> : Tag ini digunakan untuk mengelompokkan baris footer pada tabel</li>
+    </ul>
+    <p>Contoh penggunaan elemen-elemen tabel :</p>
+    <table border="1">
+       <textarea rows="10" cols="50" readonly>
+<table border="1">
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+    </tr>
+    <tr>
+        <td>Baris ke 1 - Kolom ke 1</td>
+        <td>Baris ke 1 - Kolom ke 2</td>
+    </tr>
+</table>
+        </textarea>
+    <p>Dengan hasil :</p>
+<tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+    </tr>
+    <tr>
+        <td>Baris ke 1 - Kolom ke 1</td>
+        <td>Baris ke 1 - Kolom ke 2</td>
+    </tr>
+</table>
+<h2>Menggabungkan Sel pada tabel HTML</h2>
+<p>Saat membuat tabel, terkadang kita dihadapkan akan kebutuhan untuk menggabungkan beberapa sel menjadi satu. Untuk menggabungkan beberapa sel menjadi satu pada suatu tabel, HTML menyediakan beberapa atribut yang bisa kamu gunakan seperti rowspan dan colspan</p>
+<ul>
+    <li><strong>rowspan</strong> : Atribut ini digunakan untuk menggabungkan beberapa sel pada kolom (bawah) menjadi satu</li>
+    <li><strong>colspan</strong> : Atribut ini digunakan untuk menggabungkan beberapa sel pada baris (samping) menjadi satu</li>
+<textarea rows="10" cols="50" readonly>
+         <table border="1">
+        <tr>
+            <th rowspan="2">Nama</th>
+            <th colspan="3">Nilai</th>
+        </tr>
+        <tr>
+            <th>IMK</th>
+            <th>Statis</th>
+            <th>Pemweb</th>
+        </tr>
+        <tr>
+            <td>Azka</td>
+            <td>67</td>
+            <td>89</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Saber</td>
+            <td>84</td>
+            <td>70</td>
+            <td>75</td>
+        </tr>
+        <tr>
+            <td>Aldous</td>
+            <td>96</td>
+            <td>70</td>
+            <td>71</td>
+        </tr>
+    </table>
+</textarea>
+    <p>Dengan hasil :</p>
+    <table border="1">
+        <tr>
+            <th rowspan="2">Nama</th>
+            <th colspan="3">Nilai</th>
+        </tr>
+        <tr>
+            <th>IMK</th>
+            <th>Statis</th>
+            <th>Pemweb</th>
+        </tr>
+        <tr>
+            <td>Azka</td>
+            <td>67</td>
+            <td>89</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Saber</td>
+            <td>84</td>
+            <td>70</td>
+            <td>75</td>
+        </tr>
+        <tr>
+            <td>Aldous</td>
+            <td>96</td>
+            <td>70</td>
+            <td>71</td>
+        </tr>
+    </table>
+    
+    <p><a href="index.html">Kembali ke halaman utama</a></p>
+</body>
+</html>
